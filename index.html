@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #3498db, #2c3e50);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Profile Section */
+        .profile-section {
+            text-align: center;
+            padding: 40px 0;
+            background: white;
+            margin: 30px auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .profile-picture {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #3498db;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-section h2 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .profile-section p {
+            color: #555;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+        }
+
+        /* Training & Skills Sections */
+        section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 30px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        section h2 {
+            color: #2c3e50;
+            margin-bottom: 25px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #eee;
+            font-size: 1.8rem;
+        }
+
+        .training-item, .skill-category {
+            margin-bottom: 25px;
+        }
+
+        .training-item h3 {
+            color: #3498db;
+            font-size: 1.4rem;
+            margin-bottom: 5px;
+        }
+
+        .training-item .institution {
+            font-weight: bold;
+            color: #555;
+            margin-bottom: 5px;
+        }
+
+        .training-item .date {
+            color: #7f8c8d;
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+
+        .training-item p.description {
+            color: #555;
+            line-height: 1.7;
+        }
+
+        /* Skills Section */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .skill-tag {
+            background: #3498db;
+            color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin: 5px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            .profile-picture {
+                width: 150px;
+                height: 150px;
+            }
+
+            section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Web Developer | MERN Stack | IT Expert</p>
+        </div>
+    </header>
+
+    <!-- Profile Picture & About Me -->
+    <div class="container">
+        <section class="profile-section">
+            <img src="profile.jpg" alt="My Profile Picture" class="profile-picture">
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with expertise in MERN stack development, Canva designing, and various programming languages.</p>
+        </section>
+
+        <!-- Training & Certifications -->
+        <section id="training">
+            <h2>Training & Certifications</h2>
+            
+            <div class="training-item">
+                <h3>IT EXPERT</h3>
+                <p class="institution">Gandaki English Boarding School</p>
+            </div>
+            
+            <div class="training-item">
+                <h3>MERN STACK DEVELOPMENT</h3>
+                <p class="institution">The British College</p>
+                <p class="date">2024</p>
+                <p class="description">In this MERN stack training, I learned about full-stack development, including backend, frontend, databases, and APIs.</p>
+            </div>
+            
+            <div class="training-item">
+                <h3>Canva Designing</h3>
+                <p class="institution">Skill Lab</p>
+                <p class="date">2025</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <h2>Skills</h2>
+            
+            <div class="skill-category">
+                <h3>Web Development</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">MERN Stack</span>
+                    <span class="skill-tag">PHP</span>
+                    <span class="skill-tag">Python</span>
+                </div>
+            </div>
+            
+            <div class="skill-category">
+                <h3>Professional Skills</h3>
+                <div class="skills-list">
+                    <span class="skill-tag">Innovative</span>
+                    <span class="skill-tag">Public Speaking</span>
+                    <span class="skill-tag">Stress Management</span>
+                    <span class="skill-tag">Attention to Detail</span>
+                    <span class="skill-tag">Planning & Research</span>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
